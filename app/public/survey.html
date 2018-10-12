@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Friend Finder!</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+    
+        <div class="jumbotron bg-dark text-center text-white" id="survey-box">
+                <h1 class = display-1> <span class = "fa fa-question"></span> 
+                    <span class = "fa fa-question"></span> Survey Questions</h1>
+        <br>
+        <h4>Name</h4>
+        <input type="text" id="name" class="form-control" required>
+        <h4>Link to a Photo of You</h4>
+        <input type="text" id="photo" class="form-control" required>
+        <br>
+
+        <h4>Question 1</h4>
+        <p>You love spending time with large groups of people.</p>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4>Question 2</h4>
+        <p>You consider yourself to be creative.</p>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4>Question 3</h4>
+        <p>You enjoy being physically active.</p>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4>Question 4</h4>
+        <p>You would rather have a small group of very close friends than a large group of acquaintances.</p>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4>Question 5</h4>
+        <p>You like to travel to new places on a whim.</p>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4>Question 6</h4>
+        <p>Having a successful, stable career is the key to happiness.</p>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4>Question 7</h4>
+        <p>You are always confident in front of groups of new people.</p>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4>Question 8</h4>
+        <p>You would rather watch a light-hearted comedy movie than a serious drama.</p>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4>Question 9</h4>
+        <p>You think it is more important to consider someone's emotions than the facts of a situation.</p>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <h4>Question 10</h4>
+        <p>You prefer dogs more than cats.</p>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3 (Neutral)</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-lg btn-warning" id="submit">Submit</button>
+
+    </div>
+
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h2 class="modal-title">
+                        <strong>Your New BFF is:</strong>
+                    </h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="#" alt="Your new match" style="width:80%">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+       
+       
+        var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+                allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+                disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+                no_results_text: "Nothing found!"
+            },
+            ".chosen-select-width": {
+                width: "80%"
+            }
+        };
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+        // Capture the form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            // Form validation
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                $(".chosen-select").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            if (validateForm()) {
+
+                var newfriend = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+               
+                $.post("/api/friends", newfriend, function (res) {
+                    console.log(res);
+                    $("#match-name").text(res[0].name);
+                    $("#match-img").attr("src", res[0].photo);
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
+                });
+            } else {
+                alert("Please fill out full questionaire!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

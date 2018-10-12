@@ -1,0 +1,26 @@
+{
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "description": "finds buddies",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salinasleo/friend_finder.git"
+  },
+  "keywords": [],
+  "author": "Leo Salinas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salinasleo/friend_finder/issues"
+  },
+  "homepage": "https://github.com/salinasleo/friend_finder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
